@@ -1,13 +1,73 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital@1&display=swap');
 body{
-    width: 1440px;
+    width: 100vw;
     padding: 0;
     background-color: #E5E5E5;;
 }
-main{
+header{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 94px;
+    background-color: #562EFF;
+    margin-bottom: 36px;
+}
+nav{
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-content,.right-content{
+    display: flex;
+    justify-content: center;
+}
+.left-nav-img{
+    height: 51px;
+    width: 40px;
+}
+#idea{
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-left: 15px;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+.profile-pic{
+    height: 51px;
+    width: 51px;
+    margin-left: 36px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    width: 870px; 
    margin: 0 auto;
 
@@ -16,6 +76,7 @@ section{
     width: 870px;
     background-color:white;
     border-radius: 5px;
+    margin-bottom: 21px;
     
 }
 h1{
@@ -112,5 +173,244 @@ p.authorname{
 p.authorname>a{
     text-decoration: none;
     color:  #562EFF;
-    ;
+    
+}
+/*-------
+ section2
+---------*/
+.grid-courses{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 22.5px;
+}
+.background-frame{
+width: 252px;
+height: 270px;
+background-color: rgba(252, 252, 252, 0.753);
+box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.5),-1px -1px 2px rgba(128, 128, 128, 0.5);
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 3px;
+}
+.course-thumbnail{
+    width: 214px;
+    height: 104px;
+    margin-top: 13px;
+}
+.course-instructor{
+  
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #ED6B4F;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    height: 24px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.filled{
+    color:#FFC014 ;
+}
+.empty{
+    color:rgb(212, 182, 182)
+}
+.rating{
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #A2A2A2;
+    margin-left: 7px;
+
+}
+.duration{
+    border-radius: 15px;
+    width: 95px;
+    height: 30px;
+    background:#d841576b;
+    color:#FF4A60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.fa-clock{
+    margin-right: 5px;
+}
+/* mediaqueri */
+@media only screen and (min-width:690px) and (max-width:998px) {
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100vw;
+      
+    }
+    section{
+        width: 100vw;
+    }
+
+    .players{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+       
+    }
+    .player-name{
+        display: inline-block;
+    }
+    .blog-grid
+    {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 26px;
+        }
+    article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+    hr{
+        width: 90vw;
+    }
+    .container{
+        width: 100vw;
+    }
+    .grid-courses{
+        width: 100vw;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 10px;
+       
+    }
+    .left-content{
+        margin-left: 5px;
+    }
+    .right-content{
+        margin-right: 5px;
+    }
+}
+/* for mobile */
+@media only screen and (max-width:690px){
+
+    header{
+        width: 100%;
+    }
+    nav{width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left-nav-img {
+        height: 25px;
+        width: 20px;
+        margin-left: 20px;
+    }
+    main{
+        width: 100vw;
+      
+    }
+    section{
+        width: 100vw;
+    }
+    h1{
+        text-align: center;
+    }
+    .players{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+       
+    }
+    .player{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    .player-name{
+        display: inline-block;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .blog-grid
+    {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 26px;
+        }
+    article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    hr{
+        width: 90vw;
+    }
+    .container{
+        width: 100vw;
+    }
+    .grid-courses{
+        width: 100vw;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 10px;
+       
+    }
+    .background-frame{
+        margin: 0 auto;
+    }
+    .left-content{
+        margin-left: 5px;
+    }
+    .right-content{
+        margin-right: 5px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    #idea{
+        font-size: 17px;
+    }
+    .left-content, .right-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .profile-pic{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    ul{
+        padding: 0px;
+        width: 80px;
+    }
 }
